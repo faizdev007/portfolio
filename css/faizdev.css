@@ -1,75 +1,33 @@
 body{
     margin:0;
     padding:0;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    display: flex;
+    overflow-x:hidden;
 }
-#maindiv{
-    background-size: cover;
-    background-repeat:no-repeat;
-    height: inherit;
+aside{
+    flex-basis:230px;
+    background:rgb(58, 136, 146);
+    height:100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
-.menustyle{
-    list-style:none;
-    background:rgb(70, 62, 62);
+.nav{
+    flex-flow: column;
+    padding:10px;
+}
+.nav-link{
     color:#fff;
 }
-.mainheader{
-    position:relative;
-    left:0;
-    right:0;
-    height: 100%;
+main{
+    flex-grow: 1;
 }
 .mainheader img{
     width:100%;
     padding:20px;
 }
-.navlist{
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    flex-direction: column;
-    margin:30px 0;
-    padding:10px;
-}
-.menustyle li a{
-    color:#fff;
-    transition: padding .2s ease;
-    padding-top:20px;
-    padding-bottom:20px;
-}
-.menustyle li a::after{
-    content:"\232A";
-    color:#fff;
-    padding:10px;
-}
-.menustyle li a:hover, li a::after{
-    padding-left: 30px;
-    color: #18beb8;
-    font-weight: 700;
-}
 footer{
-    position: absolute;
-    bottom: 0;
-}
-footer p{
-    font-size:12px;
-    padding:10px;
-}
-/*--- about me style ---- */
-#aboutme{
-    background:#18beb8;
-}
-#aboutme h1{
+    padding: 10px;
+    font-size: 11px;
     color: #fff;
-    margin:30px 0;
-}
-#aboutme p{
-    font-size: 20px;
-    color: #fff;
-    padding:20px;
-    margin:30px 0;
-    text-align:justify;
 }
