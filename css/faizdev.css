@@ -2,13 +2,11 @@ body{
     margin:0;
     padding:0;
     display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    height:100vh;
 }
 aside{
-    flex-basis: 250px;
+    flex-basis: 200px;
     background:rgb(107, 31, 69);
-    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,11 +19,8 @@ aside{
     color:#fff;
 }
 main{
-    display: flex;
+    flex-basis: 600px;
     flex-grow: 1;
-    flex-direction: column;
-}
-.main_divs{
     overflow-y:scroll;
 }
 .mainheader img{
