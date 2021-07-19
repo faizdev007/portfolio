@@ -65,6 +65,12 @@ iframe{
   height: 100%;
   width: 100%;
 }
+.card{
+  border: 1px solid rgba(0, 0, 0, 0.514);
+}
+.card-flip > div{
+  border-radius: 4px;
+}
 
 
 /*
