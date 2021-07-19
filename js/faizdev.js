@@ -5,3 +5,12 @@
 }
 window.onresize = autoResizeDiv;
 autoResizeDiv();`
+
+function onopenmodal(modal){
+    const websiteURL = modal.parentElement.querySelector('a').href;
+    document.querySelector('iframe').src = websiteURL;
+}
+
+function onclosemodal(modal){
+    document.querySelector('iframe').src = ' ';
+}

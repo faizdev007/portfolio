@@ -40,6 +40,33 @@ footer{
 }
 
 
+.card-title img{
+    width: 130px;
+}
+
+.weblogo{
+  width:fit-content;
+  margin:0 auto;
+}
+
+.weblogo img{
+  width:200px;
+}
+
+.modal-dialog{
+  max-width:95%;
+}
+
+.modal-content{
+  height:90vh;
+}
+
+iframe{
+  height: 100%;
+  width: 100%;
+}
+
+
 /*
 flip card
 */
