@@ -14,3 +14,12 @@ function onopenmodal(modal){
 function onclosemodal(modal){
     document.querySelector('iframe').src = ' ';
 }
+
+const date=new Date();
+
+const year=date.getFullYear();
+
+const value=document.getElementById('year').innerHTML=year;
+
+
+
