@@ -132,3 +132,14 @@ flip card
   .card-flip:hover .card-back {
     transform: rotateY(0deg);
   }
+
+  /*this for skill css*/
+
+  .skilllogo img{
+    width: 4rem;
+    margin:20px;
+  }
+
+  .progress-bar{
+    transition: width 2s ease;
+  }

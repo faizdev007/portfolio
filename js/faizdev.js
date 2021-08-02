@@ -21,5 +21,3 @@ const year=date.getFullYear();
 
 const value=document.getElementById('year').innerHTML=year;
 
-
-
