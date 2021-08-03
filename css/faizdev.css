@@ -135,11 +135,28 @@ flip card
 
   /*this for skill css*/
 
-  .skilllogo img{
-    width: 4rem;
-    margin:20px;
-  }
+.skilllogo img{
+  width: 4rem;
+  margin:20px;
+}
 
-  .progress-bar{
-    transition: width 2s ease;
-  }
+.progress-bar{
+  transition: width 2s ease;
+}
+
+#menutag{
+  border:0px;
+  background: transparent;
+  float: right;
+  transform: rotate(180deg);
+}
+
+#menutag:after{
+  content:'\0174';
+  color:#000;
+  font-size: 28px;
+}
+
+.fadmeout{
+  animation:zoomOut;
+}
