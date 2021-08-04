@@ -19,7 +19,7 @@ const date=new Date();
 
 const year=date.getFullYear();
 
-const value=document.getElementById('year').innerHTML=year;
+document.getElementById('year').innerHTML=year;
 
 var clicks = 0;
 

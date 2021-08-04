@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@500&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Faiz Dev | Web Developer</title>
     <style>
         .newslid{
@@ -44,12 +45,12 @@
             </ul>
         </div>
         <footer>
-            <p style="font-size:12px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
+            <p style="font-size:13px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
         </footer>
     </aside>
     <main>
         <div class="col-md-12 m-auto main_divs" id="aboutme">
-            <h1 class="text-center font-2 m-5">About Me</h1>
+            <h2 x-data="{message: 'About Me'}" x-text="message" class="text-center mx-auto py-5"></h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 lineR">
@@ -79,7 +80,7 @@
         </div>
         <p class="text-center m-5"><i class="fas fa-arrow-down"></i></p>
         <div class="col-md-12 m-auto" id="projects">
-            <h1 class="text-center font-2 mt-5 mb-4">My Projects</h1>
+            <h2 x-data="{message: 'My Projects'}" x-text="message" class="text-center mx-auto py-5"></h2>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
@@ -215,7 +216,7 @@
         </div>
         <p class="text-center m-5"><i class="fas fa-arrow-down"></i></p>
         <div class="col-md-12" id="skills">
-            <h1 class="text-center font-2 mt-5 mb-4">My Skills</h1>
+            <h2 x-data="{message: 'My Skills'}" x-text="message" class="text-center mx-auto py-5"></h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 mb-3 text-center">
@@ -329,7 +330,7 @@
         </div>
         <p class="text-center m-5"><i class="fas fa-arrow-down"></i></p>
         <div class="col-md-12 m-auto" id="contact">
-            <h1 class="text-center font-2 mt-5 mb-4">Hair Me Here</h1>
+            <h2 x-data="{message: 'Hair Me Here'}" x-text="message" class="text-center mx-auto py-5"></h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 lineR">
