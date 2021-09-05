@@ -160,3 +160,11 @@ flip card
 .fadmeout{
   animation:zoomOut;
 }
+
+.custbtn{
+  background: #c8c8c8;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1px;
+}

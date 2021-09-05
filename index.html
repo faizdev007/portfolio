@@ -42,6 +42,9 @@
                 <li class="nav-item">
                     <a @click.prevent="$refs.contactme.scrollIntoView()" class="nav-link" href="">Contact Me</a>
                 </li>
+                <li class="nav-item">
+                    <a @click.prevent="#" class="custbtn btn px-2" href="" style="background:#c8c8c8;">Resume</a>
+                </li>
             </ul>
         </div>
         <footer>
@@ -59,20 +62,24 @@
                         </div>
                     </div>
                     <div class="col-md-6 indie">
-                        <p>Hello My name is Faiz Alam and I am a web developer.Here are my education information blow are:</p>
-                        <h3>ACADEMIC CREDENTIALS</h3>
+                        <p>Hello My name is Faiz Alam and I am a web developer.And I am current working in Max Vision Solution website developer.I worked multiple languages in multiple platform which you can find into my <strong>skill</strong> section.You can find my <strong>Resume</strong> in menu section. Here are my education information blow are:</p>
+                        <h3 class="text-center">ACADEMIC CREDENTIALS</h3>
                         <ul>
                             <li>Bachelor of Computer Application from Jamia Hamdard University (2017).</li>
                             <li>12th passed from C.B.S.E (2013).</li>
                             <li>10th passed from C.B.S.E (2011).</li>
                         </ul>
-                        <p>After completing my Beachler education I started learning new skills which you can find below: <span><a href="#skills" class="btn btn-secondary my-2">My Skills</a></span></p>
-                        <h3>WORKING EXPERIENCE</h3>
+                        <p>After completing my Beachler education I started learning new languages which you can find below: <span><a href="#skills" class="btn btn-secondary my-2">My Skills</a></span></p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-12 indie">
+                        <h3 class="col-12 text-center">WORKING EXPERIENCE</h3>
                         <ul>
                             <li>Working as front end developer in Clickcent Media Pvt Ltd (1.5 year)</li>
                             <li>Working as Web developer in Max Vision Solution Pvt Ltd (1 year).</li>
                         </ul>
-                        <p>currently I am working as wordpress and opencart developer and here you can check some of my current project below are:</p>
+                        <p>currently I am working in laravel front end, wordpress and opencart developer and here you can check some of my current project below are:</p>
                         <p>And you can contact me for your Projects here: <span><a href="#contact" class="btn btn-secondary">Contact Me</a></span></p>
                     </div>
                 </div>
@@ -221,6 +228,45 @@
                 <div class="row">
                     <div class="col-md-3 mb-3 text-center">
                         <div class="card">
+                            <div class="skilllogo" style="background:#f6f6f6; border-bottom:1px solid #000;">
+                                <img src="./skills/livewire.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                            <p class="card-text">LiveWire</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 text-center">
+                        <div class="card">
+                            <div class="skilllogo" style="background:#f6f6f6; border-bottom:1px solid #000;">
+                                <img src="./skills/tailwind-css.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Tailwind Css</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 text-center">
+                        <div class="card">
+                            <div class="skilllogo" style="background:#2e3440;">
+                                <img src="./skills/alpinejs.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Alpine jS</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 text-center">
+                        <div class="card">
                             <div class="skilllogo" style="background:#dd4b25;">
                                 <img src="./skills/html5-brands.png" class="card-img-top" alt="...">
                             </div>
@@ -232,6 +278,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3 mb-3 text-center">
                         <div class="card">
                             <div class="skilllogo" style="background:#2b96ca;">
@@ -248,7 +296,7 @@
                     <div class="col-md-3 mb-3 text-center">
                         <div class="card">
                             <div class="skilllogo" style="background:#000;">
-                                <img src="./skills/js-square-brands.png" class="card-img-top" style="width:4.5rem;" alt="...">
+                                <img src="./skills/js-square-brands.png" class="card-img-top" style="width:4.6rem;" alt="...">
                             </div>
                             <div class="card-body">
                                 <p class="card-text">Java Script</p>
@@ -261,7 +309,7 @@
                     <div class="col-md-3 mb-3 text-center">
                         <div class="card">
                             <div class="skilllogo" style="background:#4d588e;">
-                                <img src="./skills/php-brands.png" class="card-img-top" style="width:8.5rem;" alt="...">
+                                <img src="./skills/php-brands.png" class="card-img-top" style="width:8.6rem;" alt="...">
                             </div>
                             <div class="card-body">
                                 <p class="card-text">PHP</p>
@@ -271,12 +319,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-3 mb-3 text-center">
                         <div class="card">
                             <div class="skilllogo" style="background:#533b78;">
-                                <img src="./skills/bootstrap-brands.png" class="card-img-top" alt="...">
+                                <img src="./skills/bootstrap-brands.png" class="card-img-top" style="width:4.6rem;" alt="...">
                             </div>
                             <div class="card-body">
                                 <p class="card-text">BootStrap</p>
@@ -286,6 +332,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3 mb-3 text-center">
                         <div class="card">
                             <div class="skilllogo" style="background:#207196;">
@@ -324,6 +372,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-3 mb-3 text-center">
+                        
                     </div>
                 </div>
             </div>
