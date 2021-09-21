@@ -26,8 +26,13 @@
 </head>
 <body x-data="{ text_open: false }">
     <aside>
+        <button id="menutag">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect id="bargerbottom" width="80" height="10"></rect>
+                <rect id="bargertop" y="30" width="60" height="10"></rect>
+            </svg>
+        </button>
         <div class="mainheader">
-            <button id="menutag"></button>
             <img src="images/logo.png" alt="Faiz Dev"/>
             <ul class="nav navlist">
                 <li class="nav-item">
@@ -43,17 +48,17 @@
                     <a @click.prevent="$refs.contactme.scrollIntoView()" class="nav-link" href="">Contact Me</a>
                 </li>
                 <li class="nav-item">
-                    <a @click.prevent="#" class="custbtn btn px-2" href="" style="background:#c8c8c8;">Resume</a>
+                    <a @click.prevent="#" class="px-2 custbtn btn" href="" style="background:#c8c8c8;">Resume</a>
                 </li>
             </ul>
+            <footer>
+                <p style="font-size:13px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
+            </footer>
         </div>
-        <footer>
-            <p style="font-size:13px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
-        </footer>
     </aside>
     <main>
-        <div class="col-md-12 m-auto main_divs" x-ref="aboutme">
-            <h2 x-data="{message: 'About Me'}" x-text="message" class="text-center mx-auto py-5"></h2>
+        <div class="m-auto col-md-12 main_divs" x-ref="aboutme">
+            <h2 class="py-2 mx-auto text-center border-bottom">About Me</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 lineR">
@@ -69,7 +74,7 @@
                             <li>12th passed from C.B.S.E (2013).</li>
                             <li>10th passed from C.B.S.E (2011).</li>
                         </ul>
-                        <p>After completing my Beachler education I started learning new languages which you can find below: <span><a href="#skills" class="btn btn-secondary my-2">My Skills</a></span></p>
+                        <p>After completing my Beachler education I started learning new languages which you can find below: <span><button @click.prevent="$refs.skills.scrollIntoView()" class="my-2 btn btn-secondary">My Skills</button></span></p>
                         <h3>WORKING EXPERIENCE</h3>
                         <ul>
                             <li>Working as front end developer in Clickcent Media Pvt Ltd (1.5 year)</li>
@@ -77,7 +82,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row py-3">
+                <div class="py-3 row">
                     <div class="col-md-12 indie">
                         <p>currently I am working in laravel front end, wordpress and opencart developer and here you can check some of my current project below are:</p>
                         <p>And you can contact me for your Projects here: <span><a href="#contact" class="btn btn-secondary">Contact Me</a></span></p>
@@ -85,135 +90,135 @@
                 </div>
             </div>
         </div>
-        <p class="text-center m-5"><i class="fas fa-arrow-down"></i></p>
-        <div class="col-md-12 m-auto" x-ref="projects">
-            <h2 x-data="{message: 'My Projects'}" x-text="message" class="text-center mx-auto py-5"></h2>
-            <div class="container">
+        <p class="m-5 text-center"><i class="fas fa-arrow-down"></i></p>
+        <div class="m-auto col-md-12" x-ref="projects">
+            <h2 class="py-2 mx-auto text-center border-bottom">My Projects</h2>
+            <div class="container py-3">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white" style="background-color:#959595;">
+                            <div class="text-white card-front" style="background-color:#959595;">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://mashoorparty.com/wp-content/uploads/2020/11/logo-party.png" alt="mashoorparty" style="width:150px;"/></p>
-                                    <p class="card-title text-center text-dark">Mashoorparty is a woocommerce web site which provide all kind of party products and toys.</p>
+                                    <p class="text-center card-title text-dark">Mashoorparty is a woocommerce web site which provide all kind of party products and toys.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://mashoorparty.com/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://mashoorparty.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white bg-white">
+                            <div class="text-white bg-white card-front">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://startupstartkaro.com/wp-content/uploads/2021/06/Untitled-1-01-2048x394.png" alt="startupstartkaro" /></p>
-                                    <p class="card-title text-center text-dark">Startupstartkaro provide you all leagal service relate to your new business.</p>
+                                    <p class="text-center card-title text-dark">Startupstartkaro provide you all leagal service relate to your new business.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white text-white">
+                            <div class="text-white bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://startupstartkaro.com/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://startupstartkaro.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white" style="background-color:#959595;">
+                            <div class="text-white card-front" style="background-color:#959595;">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://lajoyeria.co.in/wp-content/uploads/2021/03/0123.png" alt="lajoyeria" style="width:150px;"/></p>
-                                    <p class="card-title text-center text-dark">Lajoyeria is a woocommerce web site which provide artificial jwallery product.</p>
+                                    <p class="text-center card-title text-dark">Lajoyeria is a woocommerce web site which provide artificial jwallery product.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body text-primary">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://lajoyeria.co.in/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://lajoyeria.co.in/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 my-3">
+                    <div class="my-3 col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white bg-white">
+                            <div class="text-white bg-white card-front">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://click2loan.in/images/click2loan.jpg" alt="click2loan"/></p>
-                                    <p class="card-title text-center text-dark">Click2Loan a simple landing page which buils on full custom code width fully responsive layout.</p>
+                                    <p class="text-center card-title text-dark">Click2Loan a simple landing page which buils on full custom code width fully responsive layout.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/html-css-js.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://click2loan.in/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://click2loan.in/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 my-3">
+                    <div class="my-3 col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white" style="background-color:#959595;">
+                            <div class="text-white card-front" style="background-color:#959595;">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://fleashoppers.com/image/cache/catalog/logo-400x111.png" alt="fleashoppers"/></p>
-                                    <p class="card-title text-center text-dark">Fleashoppers ecommerce webite build on opencart. This website provide all woman clothing.</p>
+                                    <p class="text-center card-title text-dark">Fleashoppers ecommerce webite build on opencart. This website provide all woman clothing.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/OpenCart.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://fleashoppers.com/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://fleashoppers.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 my-3">
+                    <div class="my-3 col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white bg-white">
+                            <div class="text-white bg-white card-front">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://codexeducation.in/wp-content/uploads/2021/05/logo.png" alt="codexeducation" style="width:150px;"/></p>
-                                    <p class="card-title text-center text-dark">CodexEducation is a online education providing platform. which include some learing game.</p>
+                                    <p class="text-center card-title text-dark">CodexEducation is a online education providing platform. which include some learing game.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://codexeducation.in/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://codexeducation.in/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 my-3">
+                    <div class="my-3 col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white" style="background-color:#959595;">
+                            <div class="text-white card-front" style="background-color:#959595;">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://ggsoverseas.com/wp-content/uploads/2021/03/gggs-logo1.png" alt="ggsoverseas"/></p>
-                                    <p class="card-title text-center">GGSOverseas help you to get admission abroad so you get your dream job</p>
+                                    <p class="text-center card-title">GGSOverseas help you to get admission abroad so you get your dream job</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://ggsoverseas.com/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://ggsoverseas.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 my-3">
+                    <div class="my-3 col-sm-4">
                         <div class="card card-flip h-100">
-                            <div class="card-front text-white bg-white">
+                            <div class="text-white bg-white card-front">
                                 <div class="card-body">
                                     <p class="weblogo"><img src="https://ammg-marine.com/wp-content/uploads/2021/04/cropped-cropped-002-2.png" alt="ammg Marine" style="width: 90px;"/></p>
-                                    <p class="card-title text-center text-dark">AMMG Marine is a ship valve manufacturar. The websit has many valve option.</p>
+                                    <p class="text-center card-title text-dark">AMMG Marine is a ship valve manufacturar. The websit has many valve option.</p>
                                 </div>
                             </div>
-                            <div class="card-back bg-white">
+                            <div class="bg-white card-back">
                                 <div class="card-body">
                                     <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="btn btn-outline-secondary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://ammg-marine.com/" target="_newtab" class="btn btn-outline-secondary text-center">Visite</a></p>
+                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://ammg-marine.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
                                 </div>
                             </div>
                         </div>
@@ -221,12 +226,12 @@
                 </div>
             </div>
         </div>
-        <p class="text-center m-5"><i class="fas fa-arrow-down"></i></p>
+        <p class="m-5 text-center"><i class="fas fa-arrow-down"></i></p>
         <div class="col-md-12" x-ref="skills">
-            <h2 x-data="{message: 'My Skills'}" x-text="message" class="text-center mx-auto py-5"></h2>
-            <div class="container">
+            <h2 class="py-2 mx-auto text-center border-bottom">My Skills</h2>
+            <div class="container py-3">
                 <div class="row">
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#f6f6f6; border-bottom:1px solid #000;">
                                 <img src="./skills/livewire.png" class="card-img-top" alt="...">
@@ -239,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#f6f6f6; border-bottom:1px solid #000;">
                                 <img src="./skills/tailwind-css.png" class="card-img-top" alt="...">
@@ -252,7 +257,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#2e3440;">
                                 <img src="./skills/alpinejs.png" class="card-img-top" alt="...">
@@ -265,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#dd4b25;">
                                 <img src="./skills/html5-brands.png" class="card-img-top" alt="...">
@@ -280,7 +285,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#2b96ca;">
                                 <img src="./skills/css3-alt-brands.png" class="card-img-top" alt="...">
@@ -293,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#000;">
                                 <img src="./skills/js-square-brands.png" class="card-img-top" style="width:4.6rem;" alt="...">
@@ -306,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#4d588e;">
                                 <img src="./skills/php-brands.png" class="card-img-top" style="width:8.6rem;" alt="...">
@@ -319,7 +324,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#533b78;">
                                 <img src="./skills/bootstrap-brands.png" class="card-img-top" style="width:4.6rem;" alt="...">
@@ -334,7 +339,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#207196;">
                                 <img src="./skills/wordpress-simple-brands.png" class="card-img-top" alt="...">
@@ -347,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#31bce7;">
                                 <img src="./skills/opencart-brands.png" class="card-img-top" style="width:5.7rem;" alt="...">
@@ -360,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         <div class="card">
                             <div class="skilllogo" style="background:#e8382b;">
                                 <img src="./skills/laravel-brands.png" class="card-img-top" alt="...">
@@ -373,15 +378,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 text-center">
+                    <div class="mb-3 text-center col-md-3">
                         
                     </div>
                 </div>
             </div>
         </div>
-        <p class="text-center m-5"><i class="fas fa-arrow-down"></i></p>
-        <div class="col-md-12 m-auto" x-ref="contactme">
-            <h2 x-data="{message: 'Hair Me Here'}" x-text="message" class="text-center mx-auto py-5"></h2>
+        <p class="m-5 text-center"><i class="fas fa-arrow-down"></i></p>
+        <div class="m-auto col-md-12" x-ref="contactme">
+            <h2 class="py-2 mx-auto text-center border-bottom">Contact and Follow Me Here</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 lineR">
@@ -401,7 +406,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-center mt-5"><i class="fas fa-arrow-up"></i></p>
+        <p class="mt-5 text-center"><i class="fas fa-arrow-up"></i></p>
     </main>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/faizdev.js"></script>
