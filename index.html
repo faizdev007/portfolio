@@ -32,29 +32,31 @@
                 <rect id="bargertop" y="30" width="60" height="10"></rect>
             </svg>
         </button>
-        <div class="mainheader">
-            <img src="images/logo.png" alt="Faiz Dev"/>
-            <ul class="nav navlist">
-                <li class="nav-item">
-                    <a @click.prevent="$refs.aboutme.scrollIntoView()" class="nav-link active" href="">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a @click.prevent="$refs.projects.scrollIntoView()" class="nav-link" href="">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a @click.prevent="$refs.skills.scrollIntoView()" class="nav-link" href="">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a @click.prevent="$refs.contactme.scrollIntoView()" class="nav-link" href="">Contact Me</a>
-                </li>
-                <li class="nav-item">
-                    <a @click.prevent="#" class="px-2 custbtn btn" href="" style="background:#c8c8c8;">Resume</a>
-                </li>
-            </ul>
-            <footer>
-                <p style="font-size:13px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
-            </footer>
-        </div>
+        <section class="menu">
+            <div class="mainheader">
+                <img src="images/logo.png" alt="Faiz Dev"/>
+                <ul class="nav navlist">
+                    <li class="nav-item">
+                        <a @click.prevent="$refs.aboutme.scrollIntoView()" class="nav-link active" href="">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a @click.prevent="$refs.projects.scrollIntoView()" class="nav-link" href="">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a @click.prevent="$refs.skills.scrollIntoView()" class="nav-link" href="">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a @click.prevent="$refs.contactme.scrollIntoView()" class="nav-link" href="">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a @click.prevent="#" class="mx-0 custbtn btn" href="" style="background:#c8c8c8;">Resume</a>
+                    </li>
+                </ul>
+                <footer>
+                    <p style="font-size:11px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
+                </footer>
+            </div>
+        </section>
     </aside>
     <main>
         <div class="m-auto col-md-12 main_divs" x-ref="aboutme">

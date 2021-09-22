@@ -28,15 +28,21 @@ document.querySelector('#menutag').addEventListener('click',function(){
 
   if(clicks % 2 == 1)
     { 
-      document.querySelector('.mainheader').style.display="none";
-      document.querySelector('#menutag').style.transform="rotate(0deg)";
+      document.querySelector('.menu').style.left="-170px";
+      document.querySelector('#bargertop').classList.add('bargernorme');
+      document.querySelector('#bargerbottom').classList.add('bargernorme');
+      document.querySelector('aside').classList.add('adjustmenu');
       document.querySelector('#menutag').style.width="fit-content";
       document.querySelector('#menutag').style.transition=".5s";
     }
   else if(clicks % 2 == 0)
   {
-    document.querySelector('.mainheader').style.display="block";
-    document.querySelector('#menutag').style.transform="rotate(90deg)";
+    document.querySelector('#bargertop').style.transform="rotate(45deg)";
+    document.querySelector('.menu').style.left="0px";
+    document.querySelector('#bargerbottom').style.transform="rotate(135deg)";
+    document.querySelector('aside').classList.remove('adjustmenu');
+    document.querySelector('#bargertop').classList.remove('bargernorme');
+    document.querySelector('#bargerbottom').classList.remove('bargernorme');
   }
 })
 
