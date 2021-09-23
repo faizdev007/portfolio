@@ -28,6 +28,7 @@ aside{
   position: relative;
   flex-basis: 10rem;
   transition: all 0.5s ease 0s;
+  overflow-y: hidden
 }
 .adjustmenu{
   flex-basis: 50px;
@@ -36,6 +37,7 @@ aside{
   position:absolute;
   transition: all 0.5s ease 0s;
   left:0px;
+  height:100%;
 }
 .nav{
     flex-direction: column;
@@ -60,11 +62,13 @@ main{
     flex-grow: 1;
     overflow-y:scroll;
 }
-.mainheader{
+.mainheader {
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 180px;
+  justify-content: space-around;
+  width: 100%;
   transition: all 0.5s ease 0s;
+  height: 100%;
+  display: flex;
 }
 .mainheader img{
     width:150px;
@@ -187,4 +191,58 @@ flip card
   font-size: 18px;
   font-weight: 600;
   padding: 2px 20px;
+}
+
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1202px) {
+  aside{
+    flex-basis: 11rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  aside {
+    flex-basis: 18rem;  
+  }
+}
+@media screen and (max-width: 545px) {
+  aside {
+    flex-basis: 23rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  aside {
+    flex-basis: 35rem;
+  }
+  .mainheader img {
+    width: 120px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .custbtn {
+    font-size: 13px;
+  }
+  footer p{
+    font-size: 9px;
+    padding-right: 55px;
+  }
+}
+@media screen and (max-width: 281px) {
+  aside {
+    flex-basis: 38rem;
+  }
+  .mainheader img {
+    width: 110px;
+  }
+  .nav-link {
+    font-size: 10px;
+  }
+  .custbtn {
+    font-size: 9px;
+  }
+  footer p{
+    padding-right: 15px;
+  }
 }
