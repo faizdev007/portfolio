@@ -2,432 +2,401 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="images/faviconicon.png" type="image/gif" sizes="64x64">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="css/faizdev.css" type="text/css" rel="stylesheet">
-    <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@500&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Faiz Dev | Web Developer</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faiz Alam - Software Engineer Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <style>
-        .newslid{
-            animation: slideInLeft;
-            animation-duration: .5s;
+        body {
+            padding-top: 50px;
         }
-        .slid2{
-            animation: slideInRight;
-            animation-duration: .5s;
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .card {
+            margin-bottom: 30px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
-<body x-data="{ text_open: false }">
-    <aside>
-        <button id="menutag">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect id="bargerbottom" width="80" height="10"></rect>
-                <rect id="bargertop" y="30" width="60" height="10"></rect>
-            </svg>
-        </button>
-        <section class="menu">
-            <div class="mainheader">
-                <img src="images/logo.png" alt="Faiz Dev"/>
-                <ul class="nav navlist">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Faiz Alam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a @click.prevent="$refs.aboutme.scrollIntoView()" class="nav-link active" href="">About Me</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a @click.prevent="$refs.projects.scrollIntoView()" class="nav-link" href="">Projects</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a @click.prevent="$refs.skills.scrollIntoView()" class="nav-link" href="">Skills</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a @click.prevent="$refs.contactme.scrollIntoView()" class="nav-link" href="">Contact Me</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a @click.prevent="#" class="mx-0 custbtn btn" href="" style="background:#c8c8c8;">Resume</a>
+                        <a class="nav-link" href="#contact">Contact Me</a>
                     </li>
                 </ul>
-                <footer>
-                    <p style="font-size:11px;">Copyright ©<span id="year"></span> | Create  by <a href="https://www.linkedin.com/in/faiz-alam-509702a0/" style="color:#000; font-weight: 600;">Faiz Alam</a></p>
-                </footer>
             </div>
-        </section>
-    </aside>
-    <main>
-        <div class="m-auto col-md-12 main_divs" x-ref="aboutme">
-            <h2 class="py-2 mx-auto text-center border-bottom">About Me</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 lineR">
-                        <div class="profile_box">
-                            <img src="images/picture.jpg" alt="About Me">
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="display-4">Faiz Alam</h1>
+            <p class="lead">Software Engineer | Full Stack Developer</p>
+            <p class="lead">Passionate about creating scalable and high-performance web solutions.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+            <a href="https://github.com/faizdev007" class="btn btn-primary btn-lg">GitHub</a>
+            <a href="#" class="btn btn-primary btn-lg">Download CV</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="col-sm-6">
+                <h2 class="section-title">About Me</h2>
+                <p class="lead">Highly motivated software engineer with a proven track record of delivering diverse web projects. Specializing in PHP, JavaScript, and modern web development frameworks, I am committed to leveraging my skills towards the growth and success of the organization.</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Technical Skills</h2>
+    
+            <div class="row">
+                <!-- Web Development Skills Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title">Web Development</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">PHP</li>
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">CSS3</li>
+                                <li class="list-group-item">JavaScript</li>
+                                <li class="list-group-item">jQuery</li>
+                                <li class="list-group-item">Tailwind CSS</li>
+                                <li class="list-group-item">Livewire</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 indie">
-                        <p>Hello My name is Faiz Alam and I am a web developer.And I am current working in Max Vision Solution in wordpress, opencart and in laravel platforms.I worked multiple languages in multiple platform which you can find into my <strong>skill</strong> section.You can find my <strong>Resume</strong> in menu section. Here are my education information blow are:</p>
-                        <h3>ACADEMIC CREDENTIALS</h3>
-                        <ul>
-                            <li>Bachelor of Computer Application from Jamia Hamdard University (2017).</li>
-                            <li>12th passed from C.B.S.E (2013).</li>
-                            <li>10th passed from C.B.S.E (2011).</li>
-                        </ul>
-                        <p>After completing my Beachler education I started learning new languages which you can find below: <span><button @click.prevent="$refs.skills.scrollIntoView()" class="my-2 btn btn-secondary">My Skills</button></span></p>
-                        <h3>WORKING EXPERIENCE</h3>
-                        <ul>
-                            <li>Working as front end developer in Clickcent Media Pvt Ltd (1.5 year)</li>
-                            <li>Working as Web developer in Max Vision Solution Pvt Ltd (1 year).</li>
-                        </ul>
+                </div>
+    
+                <!-- Frameworks & CMS Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title">Frameworks & CMS</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Laravel</li>
+                                <li class="list-group-item">WordPress</li>
+                                <li class="list-group-item">OpenCart</li>
+                                <li class="list-group-item">CodeIgniter</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="py-3 row">
-                    <div class="col-md-12 indie">
-                        <p>currently I am working in laravel front end, wordpress and opencart developer and here you can check some of my current project below are:</p>
-                        <p>And you can contact me for your Projects here: <span><a href="#contact" class="btn btn-secondary">Contact Me</a></span></p>
+    
+                <!-- Databases & Other Technologies Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="card-title">Databases & Other Technologies</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">MySQL</li>
+                                <li class="list-group-item">PostgreSQL</li>
+                                <li class="list-group-item">Node.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <ul class="list-unstyled d-flex flex-column gap-5">
+                <li>
+                    <h5>Software Engineer at National Council of Hotel Management</h5>
+                    <p><strong>Dec 2023 - Present</strong></p>
+                    <ul>
+                        <li>Developed and maintained web applications using Laravel 10.0, PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li>Led and contributed to diverse in-house web projects, focusing on optimizing both front-end and back-end performance.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality, scalable solutions tailored to meet specific business needs.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Software Engineer at NetProphets Cyberworks Pvt. Ltd</h5>
+                    <p><strong>Apr 2023 - Dec 2023</strong></p>
+                    <ul>
+                        <li>Developed and maintained web applications using Laravel 9.0, PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li>Extensive experience with CodeIgniter and Laravel frameworks, building robust, scalable solutions backed by MySQL databases.</li>
+                        <li>Led diverse web projects, optimizing both front-end and back-end components to ensure seamless user experiences.</li>
+                        <li>Since February 2022, contributed to shaping the technological landscape and driving innovation for the National Council for Hotel Management and Catering Technology (NCHMCT) by delivering tailored, high-performance web solutions.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Software Engineer at JK Tech Pvt.Ltd (Client Location Meity)</h5>
+                    <p><strong>Feb 2022 - Apr 2023</strong></p>
+                    <ul>
+                        <li>Developed and maintained web applications using PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li>Worked with CodeIgniter and Laravel 9.0 frameworks to build scalable and high-performance solutions.</li>
+                        <li>Managed MySQL databases to ensure efficient data handling and retrieval.</li>
+                        <li>Collaborated closely with the Ministry of Electronics and Information Technology to deliver tailored solutions that meet their specific needs, ensuring optimal functionality and performance of web applications.</li>
+                        <li>Served as a full-stack developer, contributing to both front-end and back-end development while adhering to best practices and deadlines.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Web Designer at Max Visision solutions Pvt.Ltd</h5>
+                    <p><strong>Aug 2020 - Feb 2021</strong></p>
+                    <ul>
+                        <li>Developed and maintained web applications using PHP, JavaScript, jQuery, Bootstrap, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li>Worked with various frameworks including WordPress, OpenCart, and Laravel, building both front-end and back-end solutions.</li>
+                        <li>Created responsive and user-friendly websites, ensuring cross-browser compatibility and optimal performance.</li>
+                        <li>Collaborated with cross-functional teams to implement customized features and functionalities tailored to client needs.</li>
+                        <li>Focused on delivering high-quality, scalable web solutions while adhering to project timelines and requirements.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Web Designer at Clickcent Media Pvt Ltd</h5>
+                    <p><strong>Mar 2019 - jun 2020</strong></p>
+                    <ul>
+                        <li>Developed and maintained web applications using HTML5, CSS, Bootstrap, and PHP.</li>
+                        <li>Created responsive, user-friendly websites with a focus on clean, scalable code and optimal user experience.</li>
+                        <li>Collaborated with teams to deliver high-quality solutions on time while adhering to client specifications and best practices.</li>
+                        <li>Ensured cross-browser compatibility and performance optimization for smooth website functionality.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">AnnualReturn Submission Portal</h5>
+                            <p class="card-text text-truncate" title="Online Portal for Submission of Institute Annual Reports">Online Portal for Submission of Institute Annual Reports</p>
+                            <p class="card-text text-truncate" title="The AnnualReturn Submission portal is a web-based application developed to streamline and automate the process of submitting annual reports for educational institutes. This system allows institutions to submit their reports electronically, reducing paperwork and ensuring smooth data management for both users and administrators.">The AnnualReturn Submission portal is a web-based application developed to streamline and automate the process of submitting annual reports for educational institutes. This system allows institutions to submit their reports electronically, reducing paperwork and ensuring smooth data management for both users and administrators.</p>
+                            <a href="https://annualreturn.nchmnoida.com/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">MS.c JEE</h5>
+                            <p class="card-text text-truncate" title="Portal for Online submission Application Form">Portal for Online submission Application Form</p>
+                            <p class="card-text text-truncate" title="The MS.c JEE Portal is a web-based application designed to facilitate the online submission of application forms for the MS.c JEE program. The portal provides a streamlined, secure, and efficient process for candidates to apply, submit required documents, and track their application status.">The MS.c JEE Portal is a web-based application designed to facilitate the online submission of application forms for the MS.c JEE program. The portal provides a streamlined, secure, and efficient process for candidates to apply, submit required documents, and track their application status.</p>
+                            <a href="https://mscjee.nchmnoida.com/home" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Essay Writing Competition</h5>
+                            <p class="card-text text-truncate" title="Online Essay Submission System">Online Essay Submission System</p>
+                            <p class="card-text text-truncate" title="The Essay Writing Competition Portal is a web-based platform that allows participants to submit their essays online for a writing competition. The portal facilitates the entire submission process, from registration to essay submission and review, ensuring a smooth and organized competition.">The Essay Writing Competition Portal is a web-based platform that allows participants to submit their essays online for a writing competition. The portal facilitates the entire submission process, from registration to essay submission and review, ensuring a smooth and organized competition.</p>
+                            <a href="https://nchmnoida.com/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">NHTET Examination</h5>
+                            <p class="card-text text-truncate" title="Online NHTET Exam Form Submission and Result Display System">Online NHTET Exam Form Submission and Result Display System</p>
+                            <p class="card-text text-truncate" title="The NHTET Examination Portal is a web-based application designed for candidates to fill out and submit their NHTET (National Hospitality Teachers Eligibility Test) exam forms online. Additionally, the portal allows candidates to view their exam results post-evaluation. This platform simplifies the registration and result-checking process for both candidates and administrators.">The NHTET Examination Portal is a web-based application designed for candidates to fill out and submit their NHTET (National Hospitality Teachers Eligibility Test) exam forms online. Additionally, the portal allows candidates to view their exam results post-evaluation. This platform simplifies the registration and result-checking process for both candidates and administrators.</p>
+                            <a href="https://nhtet-nchm.in/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">NHTET Examination</h5>
+                            <p class="card-text text-truncate" title="Online NHTET Exam Form Submission and Result Display System">Online NHTET Exam Form Submission and Result Display System</p>
+                            <p class="card-text text-truncate" title="The NHTET Examination Portal is a web-based application designed for candidates to fill out and submit their NHTET (National Hospitality Teachers Eligibility Test) exam forms online. Additionally, the portal allows candidates to view their exam results post-evaluation. This platform simplifies the registration and result-checking process for both candidates and administrators.">The NHTET Examination Portal is a web-based application designed for candidates to fill out and submit their NHTET (National Hospitality Teachers Eligibility Test) exam forms online. Additionally, the portal allows candidates to view their exam results post-evaluation. This platform simplifies the registration and result-checking process for both candidates and administrators.</p>
+                            <a href="https://nhtet-nchm.in/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">L.K.Ganguli</h5>
+                            <p class="card-text text-truncate" title="Blogging Platform for Uploading Pictures and Posts">Blogging Platform for Uploading Pictures and Posts</p>
+                            <p class="card-text text-truncate" title="The Personal Blog is a simple, yet powerful web application that allows users to create, upload, and manage their blog posts, along with associated images. The platform enables users to share their thoughts, stories, or articles while providing a user-friendly interface for easy content creation and management.">The Personal Blog is a simple, yet powerful web application that allows users to create, upload, and manage their blog posts, along with associated images. The platform enables users to share their thoughts, stories, or articles while providing a user-friendly interface for easy content creation and management.</p>
+                            <a href="https://www.lkganguli.com/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Open Cart Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://fleashoppers.com/wp-content/uploads/2023/10/logo-400x111-1.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Fleashoppers – E-commerce Website</h5>
+                            <p class="card-text text-truncate" title="Online Marketplace for Shopping">Online Marketplace for Shopping</p>
+                            <p class="card-text text-truncate" title="Fleashoppers is a fully functional e-commerce platform designed to provide a seamless online shopping experience. The website allows users to browse a wide range of products, make purchases, and track their orders. It offers features essential for any modern e-commerce site, including user accounts, product categories, and secure payment methods.">Fleashoppers is a fully functional e-commerce platform designed to provide a seamless online shopping experience. The website allows users to browse a wide range of products, make purchases, and track their orders. It offers features essential for any modern e-commerce site, including user accounts, product categories, and secure payment methods.</p>
+                            <a href="https://fleashoppers.com/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.opencart.com/application/view/image/icon/opencart-logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Cancel Order Button for Customer</h5>
+                            <p class="card-text text-truncate" title="OpenCart Plugin for Order Cancellation and Stock Update">OpenCart Plugin for Order Cancellation and Stock Update</p>
+                            <p class="card-text text-truncate" title="The Cancel Order Button for Customer plugin provides a seamless solution for customers to cancel their orders directly from their order history in an OpenCart-based store. Upon cancellation, the system automatically updates the stock, ensuring inventory management remains accurate. This feature enhances customer experience by providing them more control over their orders and streamlines the order management process for store admins.">The Cancel Order Button for Customer plugin provides a seamless solution for customers to cancel their orders directly from their order history in an OpenCart-based store. Upon cancellation, the system automatically updates the stock, ensuring inventory management remains accurate. This feature enhances customer experience by providing them more control over their orders and streamlines the order management process for store admins.</p>
+                            <a href="https://www.opencart.com/index.php?route=marketplace/extension/info&member_token=11f32ea31510cf47d650d0418854f597&extension_id=43394" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="section-title">WordPress Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://juststart.co.in/assets/img/logo.webp" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Juststart – Business Solutions Website</h5>
+                            <p class="card-text text-truncate" title="Platform for Displaying Business-Related Solutions">Platform for Displaying Business-Related Solutions</p>
+                            <p class="card-text text-truncate" title="Juststart is a WordPress-based website designed to provide a range of business-related services and solutions. The platform allows users to explore various services offered to help businesses start, grow, and succeed in different industries. It includes a clean, modern design that highlights services, client testimonials, and case studies, all while offering easy navigation for an optimal user experience.">Juststart is a WordPress-based website designed to provide a range of business-related services and solutions. The platform allows users to explore various services offered to help businesses start, grow, and succeed in different industries. It includes a clean, modern design that highlights services, client testimonials, and case studies, all while offering easy navigation for an optimal user experience.</p>
+                            <a href="https://juststart.co.in/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://lexcounsel.in/wp-content/uploads/2021/06/unnamed.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">LexCounsel – Law Firm Website</h5>
+                            <p class="card-text text-truncate" title="Professional Website for Legal Services">Professional Website for Legal Services</p>
+                            <p class="card-text text-truncate" title="LexCounsel is a modern, professional website designed for a law firm, offering legal services in various practice areas. The platform provides potential clients with information about the firm's services, legal expertise, and team members. It includes features such as practice area pages, lawyer profiles, and client testimonials, with an intuitive design and easy navigation to facilitate user engagement and trust.">LexCounsel is a modern, professional website designed for a law firm, offering legal services in various practice areas. The platform provides potential clients with information about the firm's services, legal expertise, and team members. It includes features such as practice area pages, lawyer profiles, and client testimonials, with an intuitive design and easy navigation to facilitate user engagement and trust.</p>
+                            <a href="https://lexcounsel.in/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://codexeducation.in/wp-content/uploads/2021/05/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">CODEXEDUCATION – Education Information Portal</h5>
+                            <p class="card-text text-truncate" title="Educational Resource and Information Platform">Educational Resource and Information Platform</p>
+                            <p class="card-text text-truncate" title="CODEXEDUCATION is an online portal designed to provide students, educators, and institutions with valuable information about educational programs, courses, institutions, and career opportunities. The platform serves as a comprehensive resource for users seeking to make informed decisions about their education and career paths. It features a user-friendly interface, categorized educational content, and search functionality to help users easily find the information they need.">CODEXEDUCATION is an online portal designed to provide students, educators, and institutions with valuable information about educational programs, courses, institutions, and career opportunities. The platform serves as a comprehensive resource for users seeking to make informed decisions about their education and career paths. It features a user-friendly interface, categorized educational content, and search functionality to help users easily find the information they need.</p>
+                            <a href="https://codexeducation.in/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://ggsoverseas.com/wp-content/uploads/2022/04/GGS_OVERSEAS__14_-removebg-preview-1.png" class="w-25 mx-auto p-1" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">GGSoverseas – Overseas Education Service Portal</h5>
+                            <p class="card-text text-truncate" title="Platform for Overseas Education Consulting and Services">Platform for Overseas Education Consulting and Services</p>
+                            <p class="card-text text-truncate" title="GGSoverseas is an online portal designed to provide comprehensive overseas education consulting services to students looking to study abroad. The platform offers a range of services, including university selection, visa assistance, application processing, and scholarship guidance. The website aims to simplify the process for students by providing all the necessary information and resources in one place, with an easy-to-navigate interface.">GGSoverseas is an online portal designed to provide comprehensive overseas education consulting services to students looking to study abroad. The platform offers a range of services, including university selection, visa assistance, application processing, and scholarship guidance. The website aims to simplify the process for students by providing all the necessary information and resources in one place, with an easy-to-navigate interface.</p>
+                            <a href="https://ggsoverseas.com/" class="btn btn-dark w-100" target="_blank">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="m-5 text-center"><i class="fas fa-arrow-down"></i></p>
-        <div class="m-auto col-md-12" x-ref="projects">
-            <h2 class="py-2 mx-auto text-center border-bottom">My Projects</h2>
-            <div class="container py-3">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white card-front" style="background-color:#959595;">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://mashoorparty.com/wp-content/uploads/2020/11/logo-party.png" alt="mashoorparty" style="width:150px;"/></p>
-                                    <p class="text-center card-title text-dark">Mashoorparty is a woocommerce web site which provide all kind of party products and toys.</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://mashoorparty.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white bg-white card-front">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://startupstartkaro.com/wp-content/uploads/2021/06/Untitled-1-01-2048x394.png" alt="startupstartkaro" /></p>
-                                    <p class="text-center card-title text-dark">Startupstartkaro provide you all leagal service relate to your new business.</p>
-                                </div>
-                            </div>
-                            <div class="text-white bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://startupstartkaro.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white card-front" style="background-color:#959595;">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://lajoyeria.co.in/wp-content/uploads/2021/03/0123.png" alt="lajoyeria" style="width:150px;"/></p>
-                                    <p class="text-center card-title text-dark">Lajoyeria is a woocommerce web site which provide artificial jwallery product.</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body text-primary">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://lajoyeria.co.in/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3 col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white bg-white card-front">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://click2loan.in/images/click2loan.jpg" alt="click2loan"/></p>
-                                    <p class="text-center card-title text-dark">Click2Loan a simple landing page which buils on full custom code width fully responsive layout.</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/html-css-js.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://click2loan.in/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3 col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white card-front" style="background-color:#959595;">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://fleashoppers.com/image/cache/catalog/logo-400x111.png" alt="fleashoppers"/></p>
-                                    <p class="text-center card-title text-dark">Fleashoppers ecommerce webite build on opencart. This website provide all woman clothing.</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/OpenCart.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://fleashoppers.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3 col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white bg-white card-front">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://codexeducation.in/wp-content/uploads/2021/05/logo.png" alt="codexeducation" style="width:150px;"/></p>
-                                    <p class="text-center card-title text-dark">CodexEducation is a online education providing platform. which include some learing game.</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://codexeducation.in/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3 col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white card-front" style="background-color:#959595;">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://ggsoverseas.com/wp-content/uploads/2021/03/gggs-logo1.png" alt="ggsoverseas"/></p>
-                                    <p class="text-center card-title">GGSOverseas help you to get admission abroad so you get your dream job</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://ggsoverseas.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3 col-sm-4">
-                        <div class="card card-flip h-100">
-                            <div class="text-white bg-white card-front">
-                                <div class="card-body">
-                                    <p class="weblogo"><img src="https://ammg-marine.com/wp-content/uploads/2021/04/cropped-cropped-002-2.png" alt="ammg Marine" style="width: 90px;"/></p>
-                                    <p class="text-center card-title text-dark">AMMG Marine is a ship valve manufacturar. The websit has many valve option.</p>
-                                </div>
-                            </div>
-                            <div class="bg-white card-back">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="width: fit-content; margin: 0 auto;"><img src="./images/WordPress.png" alt="Wordpress"/></h3>
-                                    <p class="text-center"><button type="button" class="text-center btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="onopenmodal(this)">View</button> <a href="https://ammg-marine.com/" target="_newtab" class="text-center btn btn-outline-secondary">Visite</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required>
                 </div>
-            </div>
-        </div>
-        <p class="m-5 text-center"><i class="fas fa-arrow-down"></i></p>
-        <div class="col-md-12" x-ref="skills">
-            <h2 class="py-2 mx-auto text-center border-bottom">My Skills</h2>
-            <div class="container py-3">
-                <div class="row">
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#f6f6f6; border-bottom:1px solid #000;">
-                                <img src="./skills/livewire.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                            <p class="card-text">LiveWire</p>
-                              <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#f6f6f6; border-bottom:1px solid #000;">
-                                <img src="./skills/tailwind-css.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Tailwind Css</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#2e3440;">
-                                <img src="./skills/alpinejs.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Alpine jS</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#dd4b25;">
-                                <img src="./skills/html5-brands.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                            <p class="card-text">HTML</p>
-                              <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
-                <div class="row">
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#2b96ca;">
-                                <img src="./skills/css3-alt-brands.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">CSS</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#000;">
-                                <img src="./skills/js-square-brands.png" class="card-img-top" style="width:4.6rem;" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Java Script</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#4d588e;">
-                                <img src="./skills/php-brands.png" class="card-img-top" style="width:8.6rem;" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">PHP</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#533b78;">
-                                <img src="./skills/bootstrap-brands.png" class="card-img-top" style="width:4.6rem;" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">BootStrap</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
                 </div>
-                <div class="row">
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#207196;">
-                                <img src="./skills/wordpress-simple-brands.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">WordPress</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#31bce7;">
-                                <img src="./skills/opencart-brands.png" class="card-img-top" style="width:5.7rem;" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">OpenCart</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        <div class="card">
-                            <div class="skilllogo" style="background:#e8382b;">
-                                <img src="./skills/laravel-brands.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Laravel</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 text-center col-md-3">
-                        
-                    </div>
-                </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
-        <p class="m-5 text-center"><i class="fas fa-arrow-down"></i></p>
-        <div class="m-auto col-md-12" x-ref="contactme">
-            <h2 class="py-2 mx-auto text-center border-bottom">Contact and Follow Me Here</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 lineR">
-                        <h3>Contact me Here</h3>
-                        <p><i class="fas fa-mobile"></i> <a href="tel:8588854788">+91-8588854788</a></p>
-                        <p><i class="fas fa-at"></i> <a href="mailto:faizdev007@gmail.com">faizdev007@gmail.com</a></p>
-                        <p><i class="fab fa-whatsapp-square"></i> <a href="https://wa.me/918588854788">+91-8588854788</a></p>
-                        <p></p>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Follow me Here</h3>
-                        <p><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/faiz-alam-509702a0/">LinkdIn</a></p>
-                        <p><i class="fab fa-github-square"></i> <a href="https://github.com/faizdev007">GitHub</a></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="mt-5 text-center"><i class="fas fa-arrow-up"></i></p>
-    </main>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/faizdev.js"></script>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="onclosemodal(this)"></button>
-            </div>
-            <div class="modal-body">
-            <iframe src="" frameborder="0"></iframe>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="onclosemodal(this)">Close</button>
-            </div>
-        </div>
-        </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Faiz Alam | Software Engineer</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
