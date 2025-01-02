@@ -29,15 +29,15 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-dark text-white">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
+        <div class="container shadow border border-secondary rounded-4 p-2 ">
             <a class="navbar-brand" href="#">Faiz Alam</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -46,10 +46,10 @@
                         <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Me</a>
@@ -60,20 +60,20 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="text-center py-5 bg-light">
+    <section id="home" class="text-center py-5">
         <div class="container">
-            <h1 class="display-4">Faiz Alam</h1>
+            <h1 class="display-4 fw-bold">Faiz Alam</h1>
             <p class="lead">Software Engineer | Full Stack Developer</p>
             <p class="lead">Passionate about creating scalable and high-performance web solutions.</p>
             <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
             <a href="https://github.com/faizdev007" class="btn btn-primary btn-lg">GitHub</a>
-            <a href="#" class="btn btn-primary btn-lg">Download CV</a>
+            <a href="./faizalam.pdf" class="btn btn-primary btn-lg" target="_blank">Download CV</a>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="py-5">
-        <div class="container">
+        <div class="container border border-secondary rounded-4 p-3">
             <div class="col-sm-6">
                 <h2 class="section-title">About Me</h2>
                 <p class="lead">Highly motivated software engineer with a proven track record of delivering diverse web projects. Specializing in PHP, JavaScript, and modern web development frameworks, I am committed to leveraging my skills towards the growth and success of the organization.</p>
@@ -84,125 +84,113 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
-        <div class="container my-5">
-            <h2 class="text-center mb-4">Technical Skills</h2>
-    
-            <div class="row">
-                <!-- Web Development Skills Card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="card-title">Web Development</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">PHP</li>
-                                <li class="list-group-item">HTML5</li>
-                                <li class="list-group-item">CSS3</li>
-                                <li class="list-group-item">JavaScript</li>
-                                <li class="list-group-item">jQuery</li>
-                                <li class="list-group-item">Tailwind CSS</li>
-                                <li class="list-group-item">Livewire</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Frameworks & CMS Card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="card-title">Frameworks & CMS</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Laravel</li>
-                                <li class="list-group-item">WordPress</li>
-                                <li class="list-group-item">OpenCart</li>
-                                <li class="list-group-item">CodeIgniter</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Databases & Other Technologies Card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-header bg-info text-white">
-                            <h5 class="card-title">Databases & Other Technologies</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">MySQL</li>
-                                <li class="list-group-item">PostgreSQL</li>
-                                <li class="list-group-item">Node.js</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-    </section>
-
     <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
-        <div class="container">
+    <section id="experience" class=" py-5">
+        <div class="container border border-secondary rounded-4 p-3">
             <h2 class="section-title">Experience</h2>
             <ul class="list-unstyled d-flex flex-column gap-5">
                 <li>
                     <h5>Software Engineer at National Council of Hotel Management</h5>
                     <p><strong>Dec 2023 - Present</strong></p>
-                    <ul>
-                        <li>Developed and maintained web applications using Laravel 10.0, PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
-                        <li>Led and contributed to diverse in-house web projects, focusing on optimizing both front-end and back-end performance.</li>
-                        <li>Collaborated with cross-functional teams to deliver high-quality, scalable solutions tailored to meet specific business needs.</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">Developed and maintained web applications using Laravel 10.0, PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li class="list-group-item">Led and contributed to diverse in-house web projects, focusing on optimizing both front-end and back-end performance.</li>
+                        <li class="list-group-item">Collaborated with cross-functional teams to deliver high-quality, scalable solutions tailored to meet specific business needs.</li>
                     </ul>
                 </li>
                 <li>
                     <h5>Software Engineer at NetProphets Cyberworks Pvt. Ltd</h5>
                     <p><strong>Apr 2023 - Dec 2023</strong></p>
-                    <ul>
-                        <li>Developed and maintained web applications using Laravel 9.0, PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
-                        <li>Extensive experience with CodeIgniter and Laravel frameworks, building robust, scalable solutions backed by MySQL databases.</li>
-                        <li>Led diverse web projects, optimizing both front-end and back-end components to ensure seamless user experiences.</li>
-                        <li>Since February 2022, contributed to shaping the technological landscape and driving innovation for the National Council for Hotel Management and Catering Technology (NCHMCT) by delivering tailored, high-performance web solutions.</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">Developed and maintained web applications using Laravel 9.0, PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li class="list-group-item">Extensive experience with CodeIgniter and Laravel frameworks, building robust, scalable solutions backed by MySQL databases.</li>
+                        <li class="list-group-item">Led diverse web projects, optimizing both front-end and back-end components to ensure seamless user experiences.</li>
+                        <li class="list-group-item">Since February 2022, contributed to shaping the technological landscape and driving innovation for the National Council for Hotel Management and Catering Technology (NCHMCT) by delivering tailored, high-performance web solutions.</li>
                     </ul>
                 </li>
                 <li>
                     <h5>Software Engineer at JK Tech Pvt.Ltd (Client Location Meity)</h5>
                     <p><strong>Feb 2022 - Apr 2023</strong></p>
-                    <ul>
-                        <li>Developed and maintained web applications using PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
-                        <li>Worked with CodeIgniter and Laravel 9.0 frameworks to build scalable and high-performance solutions.</li>
-                        <li>Managed MySQL databases to ensure efficient data handling and retrieval.</li>
-                        <li>Collaborated closely with the Ministry of Electronics and Information Technology to deliver tailored solutions that meet their specific needs, ensuring optimal functionality and performance of web applications.</li>
-                        <li>Served as a full-stack developer, contributing to both front-end and back-end development while adhering to best practices and deadlines.</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">Developed and maintained web applications using PHP, JavaScript, jQuery, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li class="list-group-item">Worked with CodeIgniter and Laravel 9.0 frameworks to build scalable and high-performance solutions.</li>
+                        <li class="list-group-item">Managed MySQL databases to ensure efficient data handling and retrieval.</li>
+                        <li class="list-group-item">Collaborated closely with the Ministry of Electronics and Information Technology to deliver tailored solutions that meet their specific needs, ensuring optimal functionality and performance of web applications.</li>
+                        <li class="list-group-item">Served as a full-stack developer, contributing to both front-end and back-end development while adhering to best practices and deadlines.</li>
                     </ul>
                 </li>
                 <li>
                     <h5>Web Designer at Max Visision solutions Pvt.Ltd</h5>
                     <p><strong>Aug 2020 - Feb 2021</strong></p>
-                    <ul>
-                        <li>Developed and maintained web applications using PHP, JavaScript, jQuery, Bootstrap, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
-                        <li>Worked with various frameworks including WordPress, OpenCart, and Laravel, building both front-end and back-end solutions.</li>
-                        <li>Created responsive and user-friendly websites, ensuring cross-browser compatibility and optimal performance.</li>
-                        <li>Collaborated with cross-functional teams to implement customized features and functionalities tailored to client needs.</li>
-                        <li>Focused on delivering high-quality, scalable web solutions while adhering to project timelines and requirements.</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">Developed and maintained web applications using PHP, JavaScript, jQuery, Bootstrap, Tailwind CSS, Alpine.js, HTML5, and CSS.</li>
+                        <li class="list-group-item">Worked with various frameworks including WordPress, OpenCart, and Laravel, building both front-end and back-end solutions.</li>
+                        <li class="list-group-item">Created responsive and user-friendly websites, ensuring cross-browser compatibility and optimal performance.</li>
+                        <li class="list-group-item">Collaborated with cross-functional teams to implement customized features and functionalities tailored to client needs.</li>
+                        <li class="list-group-item">Focused on delivering high-quality, scalable web solutions while adhering to project timelines and requirements.</li>
                     </ul>
                 </li>
                 <li>
                     <h5>Web Designer at Clickcent Media Pvt Ltd</h5>
                     <p><strong>Mar 2019 - jun 2020</strong></p>
-                    <ul>
-                        <li>Developed and maintained web applications using HTML5, CSS, Bootstrap, and PHP.</li>
-                        <li>Created responsive, user-friendly websites with a focus on clean, scalable code and optimal user experience.</li>
-                        <li>Collaborated with teams to deliver high-quality solutions on time while adhering to client specifications and best practices.</li>
-                        <li>Ensured cross-browser compatibility and performance optimization for smooth website functionality.</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">Developed and maintained web applications using HTML5, CSS, Bootstrap, and PHP.</li>
+                        <li class="list-group-item">Created responsive, user-friendly websites with a focus on clean, scalable code and optimal user experience.</li>
+                        <li class="list-group-item">Collaborated with teams to deliver high-quality solutions on time while adhering to client specifications and best practices.</li>
+                        <li class="list-group-item">Ensured cross-browser compatibility and performance optimization for smooth website functionality.</li>
                     </ul>
                 </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="experience" class=" py-5">
+        <div class="container border border-secondary rounded-4 p-3">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="list-unstyled d-flex flex-column gap-5">
+                <li>
+                    <h5>Web Development</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">PHP</li>
+                        <li class="list-group-item">HTML5</li>
+                        <li class="list-group-item">CSS3</li>
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">jQuery</li>
+                        <li class="list-group-item">Tailwind CSS</li>
+                        <li class="list-group-item">Livewire</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Frameworks & CMS</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Laravel</li>
+                        <li class="list-group-item">WordPress</li>
+                        <li class="list-group-item">OpenCart</li>
+                        <li class="list-group-item">CodeIgniter</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Databases & Other Technologies</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">MySQL</li>
+                        <li class="list-group-item">PostgreSQL</li>
+                        <li class="list-group-item">Node.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container border border-secondary rounded-4 p-3">
+            <h2 class="section-title">Professional Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Result and target-oriented</li>
+                <li class="list-group-item">Quick learner</li>
+                <li class="list-group-item">Good typing speed</li>
+                <li class="list-group-item">Good listener</li>
+                <li class="list-group-item">Good analytical and problem-solving skills</li>
             </ul>
         </div>
     </section>
@@ -210,11 +198,11 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Laravel Projects</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">AnnualReturn Submission Portal</h5>
                             <p class="card-text text-truncate" title="Online Portal for Submission of Institute Annual Reports">Online Portal for Submission of Institute Annual Reports</p>
@@ -225,8 +213,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">MS.c JEE</h5>
                             <p class="card-text text-truncate" title="Portal for Online submission Application Form">Portal for Online submission Application Form</p>
@@ -237,8 +225,8 @@
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">Essay Writing Competition</h5>
                             <p class="card-text text-truncate" title="Online Essay Submission System">Online Essay Submission System</p>
@@ -249,8 +237,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">NHTET Examination</h5>
                             <p class="card-text text-truncate" title="Online NHTET Exam Form Submission and Result Display System">Online NHTET Exam Form Submission and Result Display System</p>
@@ -261,8 +249,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">NHTET Examination</h5>
                             <p class="card-text text-truncate" title="Online NHTET Exam Form Submission and Result Display System">Online NHTET Exam Form Submission and Result Display System</p>
@@ -273,8 +261,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://annualreturn.nchmnoida.com/public/images/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">L.K.Ganguli</h5>
                             <p class="card-text text-truncate" title="Blogging Platform for Uploading Pictures and Posts">Blogging Platform for Uploading Pictures and Posts</p>
@@ -288,8 +276,8 @@
             <h2 class="section-title">Open Cart Projects</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://fleashoppers.com/wp-content/uploads/2023/10/logo-400x111-1.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://fleashoppers.com/wp-content/uploads/2023/10/logo-400x111-1.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">Fleashoppers – E-commerce Website</h5>
                             <p class="card-text text-truncate" title="Online Marketplace for Shopping">Online Marketplace for Shopping</p>
@@ -300,8 +288,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://www.opencart.com/application/view/image/icon/opencart-logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://www.opencart.com/application/view/image/icon/opencart-logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">Cancel Order Button for Customer</h5>
                             <p class="card-text text-truncate" title="OpenCart Plugin for Order Cancellation and Stock Update">OpenCart Plugin for Order Cancellation and Stock Update</p>
@@ -316,8 +304,8 @@
             <h2 class="section-title">WordPress Projects</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://juststart.co.in/assets/img/logo.webp" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://juststart.co.in/assets/img/logo.webp" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">Juststart – Business Solutions Website</h5>
                             <p class="card-text text-truncate" title="Platform for Displaying Business-Related Solutions">Platform for Displaying Business-Related Solutions</p>
@@ -328,8 +316,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://lexcounsel.in/wp-content/uploads/2021/06/unnamed.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://lexcounsel.in/wp-content/uploads/2021/06/unnamed.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">LexCounsel – Law Firm Website</h5>
                             <p class="card-text text-truncate" title="Professional Website for Legal Services">Professional Website for Legal Services</p>
@@ -340,8 +328,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://codexeducation.in/wp-content/uploads/2021/05/logo.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://codexeducation.in/wp-content/uploads/2021/05/logo.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">CODEXEDUCATION – Education Information Portal</h5>
                             <p class="card-text text-truncate" title="Educational Resource and Information Platform">Educational Resource and Information Platform</p>
@@ -352,8 +340,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://ggsoverseas.com/wp-content/uploads/2022/04/GGS_OVERSEAS__14_-removebg-preview-1.png" class="w-25 mx-auto p-1" alt="Project Image">
+                    <div class="card bg-black">
+                        <img src="https://ggsoverseas.com/wp-content/uploads/2022/04/GGS_OVERSEAS__14_-removebg-preview-1.png" class="w-25 mx-auto pt-4" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">GGSoverseas – Overseas Education Service Portal</h5>
                             <p class="card-text text-truncate" title="Platform for Overseas Education Consulting and Services">Platform for Overseas Education Consulting and Services</p>
@@ -371,27 +359,38 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" required>
+            <h2 class="section-title text-center">Contact</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="container border border-secondary rounded-4 p-3">
+                        <h2 class="section-title">Address :</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">WZ-885, Rani Bagh, Shakur Basti, Delhi - 110034</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" required>
+                <div class="col-md-4">
+                    <div class="container border border-secondary rounded-4 p-3">
+                        <h2 class="section-title">Contact no :</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">8588854788</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                <div class="col-md-4">
+                    <div class="container border border-secondary rounded-4 p-3">
+                        <h2 class="section-title">Email :</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">faizdev007@gmail.com</li>
+                        </ul>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="bg-dark text-center">
         <p>&copy; 2025 Faiz Alam | Software Engineer</p>
     </footer>
 
